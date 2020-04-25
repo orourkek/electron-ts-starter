@@ -1,0 +1,23 @@
+@import './variables.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: $body-bg;
+  color: $body-color;
+}
+
+a {
+  color: $link-color;
+
+  &:hover {
+    color: $link-hover-color;
+  }
+}
+
+#mount-point {
+  height: 100%;
+  width: 100%;
+}

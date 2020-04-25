@@ -1,0 +1,25 @@
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  15% { transform: rotate(90deg); }
+  85% { transform: rotate(270deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loading-spinner,
+.loading-spinner:after {
+  border-radius: 50%;
+  width: 10em;
+  height: 10em;
+}
+
+.loading-spinner {
+  margin: 2em auto;
+  position: relative;
+  text-indent: -9999em;
+  border-top: 1.5em solid #ffffff;
+  border-right: 1.5em solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1.5em solid rgba(255, 255, 255, 0.2);
+  border-left: 1.5em solid rgba(255, 255, 255, 0.2);
+  transform: translateZ(0);
+  animation: spin 1.2s infinite linear;
+}

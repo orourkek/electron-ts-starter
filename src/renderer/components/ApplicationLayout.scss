@@ -1,0 +1,9 @@
+@import '../style/variables.scss';
+
+.appLayout {
+  display: flex;
+
+  > aside {}
+
+  > main {}
+}
